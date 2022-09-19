@@ -2,7 +2,7 @@ version: '3'
 services:
    app:
       container_name: docker-node-mongo
-      restart: always
+      tty: true
       build: .
       ports:
          - '80:3000'
